@@ -1,0 +1,38 @@
+1. Bank:
+
+   • Properties: Name, accounts, customers.
+
+   • Methods:
+
+     • AddCustomer(Customer customer): Adds a new customer to the bank.
+
+     • CreateAccount(int customerId, string accountType, decimal initialBalance): Creates a new account for a customer.
+     • GetAccount(int accountNumber): Retrieves an account by its number.
+
+2. Customer:
+
+   • Properties: CustomerId, Name, accounts.
+
+   • Methods:
+
+     • AddAccount(Account account): Adds a new account to the customer's list.
+
+3. Account:
+
+   • Properties: AccountNumber, AccountType, balance.
+
+   • Methods:
+
+     • Deposit(decimal amount): Deposits a specified amount into the account.
+
+     • Withdraw(decimal amount): Withdraws a specified amount from the account.
+
+     • GetBalance(): Returns the current balance of the account.
+
+     • TransferFunds(Account targetAccount, decimal amount): Transfers funds to another account.
+
+4. Transaction:
+
+   • Properties: TransactionType, Amount, AccountNumber, Timestamp.
+
+   • Methods: A simple string representation of the transaction through the overridden ToString() method.
